@@ -1,0 +1,34 @@
+// RoboJoint-Exo System Design Diagram
+digraph RoboJointExo {
+    rankdir=LR;
+    node [shape=box, fontname="Arial"];
+
+    // Main Components
+    subgraph cluster_CPU {
+        label = "CPU/MCU Module";
+        style = dashed;
+        CPU [label="CPU/MCU", shape=ellipse];
+        AI [label="AI Software Modules"];
+        CPU -> AI;
+    }
+
+    subgraph cluster_JointModules {
+        label = "Joint Modules";
+        style = dashed;
+        JM_Hip [label="Hip Module"];
+        JM_Knee [label="Knee Module"];
+        JM_Sensors [label="Sensors\n(Gyroscopes, Geomagnetic)"];
+        JM_Motors [label="Stepper Motors\n(Multiplane Torque)"];
+
+        JM_Hip -> JM_Sensors;
+        JM_Hip -> JM_Motors;
+        JM_Knee -> JM_Sensors;
+        JM_Knee -> JM_Motors;
+    }
+
+    // Interconnections
+    CPU -> JM_Hip [label="Control Signal"];
+    CPU -> JM_Knee [label="Control Signal"];
+    JM_Sensors -> CPU [label="Position Feedback"];
+    CPU -> JM_Motors [label="Balancing & Tone Control"];
+}
