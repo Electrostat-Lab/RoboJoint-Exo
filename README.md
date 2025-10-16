@@ -1,4 +1,5 @@
 # RoboJoint-Exo
+> Keywords: Exoskeleton - Musculoskeletal System - Cerebrovascular Strokes - Hemiplegia - 
 A micro-smart bionic joint interface system simulating the biomechanics of human joints integrating AI models for augmentation of balance and smoothening of tone emulating the fine-grained smooth control of the human cerebellum.
 
 ## Preface
@@ -6,6 +7,13 @@ RoboJoint-Exo features exoskeleton system implementation through connecting huma
 
 The project aims at providing a reliable framework to build robust human exoskeletons that supports the joints of the appendicular skeleton; which are severly imparied in morbid disorders; of the most of them are the stroke syndromes affecting the Middle and Anterior Cerebral circulations, and anterior cord syndromes irrespective of the cause. In addition, the project provides compatibility for other localized joint disorders including; ligametnous tears and joint instabilities, but excluding advanced knee osteoarthritis and fractures of long bones.
 
+## Preview
+The following brief list of medical conditions are the ones to be addressed by the project; of which some are systemic disorders, while others are localized ones:
+1) Patients in state of **hemiplegia** or **hemiparesis**; as a result of cerebrovascular or spinovascular stroke syndromes affecting the MCA/ACA/Anterior Spinal a. vascular territories or as a result of spinal cord transection syndromes (Systemic Disease).
+2) Patients with joint instability disorders; as a result of cartilaginous and ligamentous ruptures or tears (Localized Disorders).
+3) Patients with MCA/ACA stroke syndromes requiring early rehabilitation therapy to avoid further muscle wasting. (Systemic Disease).
+4) In patients with MCA/ACA stroke syndromes, co-morbidities for further Stroke syndromes could occur as a result of immobility and vascular endothelial injury; the device will help avoid the most commonly occuring co-morbidities (Deep Venous Thrombosis -- DVT) as a result of immobility (Systemic Disease)
+5) In children with **quadriplegia** or **quadriparesis**; the device may give some hope by adding some artificial tones to the joints of the appendicular skeleton (Systemic Disease).
 
 ## Table of contents:
 ### Part.01: Problems 
