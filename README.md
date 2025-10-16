@@ -1,5 +1,6 @@
 # RoboJoint-Exo
-> Keywords: Exoskeleton - Musculoskeletal System - Cerebrovascular Strokes - Hemiplegia - 
+> Keywords: Exoskeleton - Musculoskeletal System - Cerebrovascular Strokes - Hemiplegia - System Disease - Rehabilitation Therapy
+
 A micro-smart bionic joint interface system simulating the biomechanics of human joints integrating AI models for augmentation of balance and smoothening of tone emulating the fine-grained smooth control of the human cerebellum.
 
 ## Preface
