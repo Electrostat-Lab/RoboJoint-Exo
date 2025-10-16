@@ -18,12 +18,15 @@ The following brief list of medical conditions are the ones to be addressed by t
 5) In children with **quadriplegia** or **quadriparesis**; the device may give some hope by adding some artificial tones to the joints of the appendicular skeleton (Systemic Disease).
 
 ### Device Mechanics
-The general layout proposed for the device is:
+The general layout proposed for the device is (See Fig.):
+
 1) Multiple joint modules; each module controlling a joint in the lower extremity (e.g., Hip and Knee Modules).
 2) A single CPU/MCU module connecting these modules to a single unit.
 3) Joint modules are powered by a large torque stepper motors in multiple planes analogous to the joint normal planes.
 4) Joint modules are powered by sensor components (e.g., Gyroscopes and Geomagnetic sensors) to detect the joint position and report it back to the CPU module.
 5) AI software modules are provided and installed on the CPU/MCU module; providing balancing system by simultaneously controling different stepper motors from different planes; in addition to smoothening the interpolation of motion, therefore providing a substitute for the cerebellar and dorsal column proprioceptive functions that control the muscles tone and keep track of the muscle spatial and temporal position.
+
+<img width="1071" height="404" alt="graphviz" src="https://github.com/user-attachments/assets/0d87c8e2-c447-448c-a6db-f353208bce58" />
 
 ### Joint Modules Mechanics Examples:
 https://github.com/user-attachments/assets/fdeb4a84-2ae8-438b-98f6-9c01f6907325
