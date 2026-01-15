@@ -1,13 +1,13 @@
 ## Part.02: Software Architectural Subsystems Detailed Design
   * 2.1 Review Software Architecture: Subsystems, Components, Modules, and Teams.
-  * 2.3 Deliverable Milestones and a general roadmap.
-  * 2.4 Hardware-Software Abstraction Layer (HSAL): Subsystems and their components.
-  * 2.5 Hardware-Software Abstraction Layer (HSAL): Mathematical Model design and implementation.
-  * 2.7 Hardware-Software Abstraction Layer (HSAL): Physical Model design and implementation.
-  * 2.8 Hardware-Software Abstraction Layer (HSAL): Wiring Circuitry and hardware protocols.
-  * 2.9 Hardware-Software Abstraction Layer (HSAL): Software AI Module design and implementation.
-  * 3.1 RoboExo-Simulator Subsystem: Core components design and implementation.
-  * 3.2 RoboExo-Hardware Subsystem: Core components design and implementation.
+  * 2.2 Deliverable Milestones and a general roadmap.
+  * 3.1 Hardware-Software Abstraction Layer (HSAL): Subsystems and their components.
+  * 3.2 Hardware-Software Abstraction Layer (HSAL): Mathematical Model design and implementation.
+  * 3.3 Hardware-Software Abstraction Layer (HSAL): Physical Model design and implementation.
+  * 3.4 Hardware-Software Abstraction Layer (HSAL): Wiring Circuitry and hardware protocols.
+  * 3.5 Hardware-Software Abstraction Layer (HSAL): Software AI Module design and implementation.
+  * 4.1 RoboExo-Simulator Subsystem: Core components design and implementation.
+  * 4.2 RoboExo-Hardware Subsystem: Core components design and implementation.
 
 ### 2.1 Review Software Architecture: Subsystems, Components, Modules, and Teams
 **Preface:**
@@ -23,11 +23,11 @@ In the previous document, an overview of the system design has been explained; i
 
 <img src="https://github.com/RoboJoint-Team/RoboJoint-Exo/blob/main/system-design/assets/solution-design.svg">
 
-### 2.4 Hardware-Software Abstraction Layer (HSAL): Subsystems and their components
+### 3.1 Hardware-Software Abstraction Layer (HSAL): Subsystems and their components
 **HSAL Subsystems:**
 * Vector Math Subsystem (Arithmos): This subsystem is comprised of `(1) 2D Vector Transforms. (2) 3D Vector Transforms. (3) Soft IRQs Component.`
 * Matrix Algebra Subsytem (Arithmos): This subsystem is comprised of `(1) N-Dimensional Matrix Transforms. (2) 3D Matrix Rotator Transformer. (3) Matrix Gimbal Component. (4) Soft IRQs Component`.
-* 3D Physics Subsystem (Delta-Engine): This subsystem is comprised of `(1) Physics Spaces. (2) Newtonian Classical Mechanics. (3) Biomechanics Specialization. (4) Joint Builder Component.`.
+* 3D Physics Subsystem (Delta-Engine): This subsystem is comprised of `(1) Physics Spaces. (2) Newtonian Classical Mechanics. (3) Biomechanics Specialization. (4) Joint Builder Component. (5) Physics Objects Components. (6) Physics Groups Components. (7) Relation components: attach a mechanic to a physics group.`.
 
 **Simulator Subsystems:**
 * 3D Physics Glue Subsystem: This subsystem is comprised of `(1) JNI/C Interpreter Component. (2) JVM Delta Components.`.
